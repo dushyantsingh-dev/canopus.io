@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Eczar&family=Metal+Mania&family=Tillana&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow:hidden;
+    display: flex;
+    background-color: #333;
+}
+
+nav{
+    width: 7vw;
+    /* background-color: rgba(20,20,20,3); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+nav #--1:after{
+    content: 'Sign-in';
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: #111;
+    color: #fff;
+    width: fit-content;
+    font-size: 1.25rem;
+    width: 6rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius:1000px ;
+    margin-left: 2rem;
+    opacity: 0;
+    transition: all 250ms ease-out;
+    font-family: 'Metal Mania', cursive;
+}
+nav #--1:hover::after{
+    opacity: 100;
+    left: 102.5%;
+
+}
+
+
+
+nav #--2:after{
+    content: 'Home';
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: #111;
+    color: #fff;
+    width: fit-content;
+    font-size: 1.25rem;
+    width: 6rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius:1000px ;
+    margin-left: 2rem;
+    opacity: 0;
+    transition: all 250ms ease-out;
+    font-family: 'Metal Mania', cursive;
+}
+nav #--2:hover::after{
+    opacity: 100;
+    left: 102.5%;
+
+}
+
+
+
+nav #--3:after{
+    content: 'Cards';
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: #111;
+    color: #fff;
+    width: fit-content;
+    font-size: 1.25rem;
+    width: 6rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius:1000px ;
+    margin-left: 2rem;
+    opacity: 0;
+    transition: all 250ms ease-out;
+    font-family: 'Metal Mania', cursive;
+}
+nav #--3:hover::after{
+    opacity: 100;
+    left: 102.5%;
+
+}
+
+
+
+nav #--4:after{
+    content: 'How-to-play';
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: #111;
+    color: #fff;
+    width: fit-content;
+    font-size: 1.25rem;
+    width: 6rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius:1000px ;
+    margin-left: 2rem;
+    opacity: 0;
+    transition: all 250ms ease-out;
+    font-family: 'Metal Mania', cursive;
+}
+nav #--4:hover::after{
+    opacity: 100;
+    left: 102.5%;
+
+}
+
+nav #--5:after{
+    content: 'Fort';
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: #111;
+    color: #fff;
+    width: fit-content;
+    font-size: 1.25rem;
+    width: 6rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius:1000px ;
+    margin-left: 2rem;
+    opacity: 0;
+    transition: all 250ms ease-out;
+    font-family: 'Metal Mania', cursive;
+}
+nav #--5:hover::after{
+    opacity: 100;
+    left: 102.5%;
+
+}
+
+nav a{
+    color: #fff;
+    font-size:2.5rem;
+    margin: 1.5rem 0;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+nav a:hover{
+    font-size: 4rem;
+    margin-left: 3rem;
+
+}
+
+nav a:first-child{
+    margin-top: 2rem;
+}
+.logo{
+    font-family: 'Caesar Dressing', cursive;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.cards-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.cards-wrapper .active{
+    transform: scale(115%);
+}
+
+
+ .card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff4ec;
+    height: fit-content;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    align-items: center ;
+    position: relative;
+    /* border: 2px solid #000; */
+    /* box-shadow: 0px 0px 75px #2462ff; */
+    margin: 1rem 3.5rem;
+    /* background-image: linear-gradient(#3333,#3333); */
+    transition: all 500ms ease-in-out;
+ }
+
+.cards-wrapper .red{
+    box-shadow: 0px 0px 60px #ff3131;
+
+}
+
+.cards-wrapper .green{
+    box-shadow: 0px 0px 60px #31ff31;
+}
+
+.cards-wrapper .blue{
+    box-shadow: 0px 0px 60px #2462ff;
+}
+
+
+.card img{
+    /* aspect-ratio: 2/3; */
+    width: 10rem;
+    /* opacity: 0; */
+    /* background-image: linear-gradient(#3333,#3333); */
+}
+
+.card .stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Tillana', cursive;
+    border-bottom:2px solid black ;
+    border-top:2px solid black ;
+
+
+}
+
+.card:hover{
+    transform: scale(115%);
+}
+
+
+
+.card .t{
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+    top: 10%;
+}
+
+.card .rare{
+    font-family: 'Metal Mania', cursive;
+    font-size: 1.25rem;
+}
+
+.card .type{
+    font-size: 2rem;
+}
+
+.card .name{
+    font-family:'Caesar Dressing', cursive;
+    font-size: 2rem;
+}
+
+.wrp{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main button{
+    /* border: 4px solid #FF3131; */
+    border: none;
+    background-color:#ff3131;
+    /* background-color: transparent; */
+    color: #fff;
+    outline: none;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    font-size: 2rem; 
+    /* box-shadow: 0px 0px 100px #ff3131; */
+    font-family: 'Caesar Dressing', cursive;
+    letter-spacing: 7px;
+    margin: 2rem;
+}
+/*
+font-family: 'Caesar Dressing', cursive;
+font-family: 'Eczar', serif;
+font-family: 'Metal Mania', cursive;
+font-family: 'Tillana', cursive;
+ */
